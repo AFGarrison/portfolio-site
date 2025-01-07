@@ -1,0 +1,29 @@
+/*HTML Tags*/
+body {
+  margin: 0 5%;
+  background-color: rgb(189, 235, 137);
+}
+
+/*IDs*/
+#my-picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Classes*/
+.center-text {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.one-more-thing {
+  font-size: 10px;
+  color: dimgray;
+}
+
+.section-picture {
+  width: 100%;
+}

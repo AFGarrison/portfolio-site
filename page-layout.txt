@@ -1,0 +1,34 @@
+-Header　☑
+  (H1)Andrew Garrison
+  (H2)Full Stack Development and JP/EN Contents Management
+  (H3)Portfolio Site
+-About Me　☑
+   (Picture)
+   (P)I am an American living in Nagasaki, Japan since 2016. I have 6 years of experience in both front end/full stack development and the translation/provision of multilingual contents through work in the Japanese IT industry. My specializations are in ESC6 (JavaScript), Python, Linux, and the translation and localization of web and marketing contents. I also have experience in Japanese to English interpretation and legal translation, as well as technical writing and market research.
+  (P)I gain enjoyment from work when I get the chance to collaborate with people and find new opportunities. Solving problems is one of the most satisfying aspects of programming and product creation to me, and I value using front end/full stack development for the ability to create a visible result.
+-Work Experience　☑
+  (H3) DSBRAND Co., Ltd. (株式会社DSBRAND)
+  (H4) Nagasaki, Japan - April 2019 to Present
+  (P) Head of English contents provision in the "Global Center" department. Main responsibilities include English translation of Japanese web contents, site management through the use of CSS and JavaScript, development of tools and systems for internal use, and research into foreign markets regarding business opportunities. Other experience includes interpretation regarding and management of contact with overseas companies, as well as project management experience since February 2024.
+-Programming Examples
+  (DIV) Era Converter (Typescript)
+  (DIV) Photo Viewer (Node.js)
+  (DIV) Web Scraper (Python)
+-Main Technologies
+  (DIV) HTML
+  (DIV) CSS, Sass
+  (DIV) JavaScript, Node.js, Express.js/Pug, TypeScript, Deno, Fresh.js
+  (DIV) Python, BeautifulSoup
+  (DIV) Linux (CENTOS)
+-Secondary Technologies
+  (DIV) PHP, Cake.php
+  (DIV) SQL, MySQL
+  (DIV) C#, .NET
+  (DIV) Filezilla, XAMPP, SSH
+-Other Skills　☑
+  (LI) Technical Writing/Content Creation, Microsoft Office, SEO Contents, Market Research
+-Contact Me
+  (DIV) Resume Link (Google Drive)
+  (DIV) GitHub Link
+  (DIV) LinkedIn Profile Link
+  (DIV) Email Link
