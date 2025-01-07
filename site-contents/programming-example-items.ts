@@ -6,3 +6,5 @@ const eraConverter: InfoObject = {
     picture: "",
     description: [""]
 }
+
+export const programmingList = [eraConverter];
