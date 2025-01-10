@@ -19,6 +19,14 @@ body {
   display: inline-block;
 }
 
+.list-column {
+  display: inline-block;
+  height: 100%;
+  width: 49%;
+  border: 1px solid lightgray;
+  vertical-align: top;
+}
+
 .one-more-thing {
   font-size: 10px;
   color: dimgray;
@@ -26,4 +34,9 @@ body {
 
 .section-picture {
   width: 100%;
+}
+
+.tab {
+  display: inline-block;
+  border: 1px solid black;
 }

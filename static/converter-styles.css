@@ -1,3 +1,36 @@
 body {
-    background-color: white;
+  background-color: white;
+  margin: 0 25px;
+}
+
+#info-box {
+  position: absolute;
+  top: 50px;
+  left: 88%;
+  width: 300px;
+}
+
+#info-button {
+  border: 1px solid black;
+  height: 15px;
+  width: 100%;
+}
+
+#more-info {
+  transition-property: height;
+  transition-duration: 1s;
+  overflow: scroll;
+  visibility: hidden;
+  height: 0px;
+  max-height: 300px;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.one-more-thing {
+  font-size: 10px;
+  color: dimgray;
 }

@@ -10,6 +10,8 @@ import * as $blog_posts_post_ from "./routes/blog/posts/[post].tsx";
 import * as $era_converter from "./routes/era-converter.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $converter_search from "./islands/converter-search.tsx";
+import * as $info_box from "./islands/info-box.tsx";
+import * as $programming_examples from "./islands/programming-examples.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,6 +26,8 @@ const manifest = {
   },
   islands: {
     "./islands/converter-search.tsx": $converter_search,
+    "./islands/info-box.tsx": $info_box,
+    "./islands/programming-examples.tsx": $programming_examples,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

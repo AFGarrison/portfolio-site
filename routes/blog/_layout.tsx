@@ -1,4 +1,11 @@
 import { type PageProps } from "$fresh/server.ts";
+import { RouteConfig } from "$fresh/server.ts";
+
+export const config: RouteConfig = {
+  routeOverride: "/",
+  skipAppWrapper: true,
+};
+
 export default function App({ Component }: PageProps) {
   return (
     <html>

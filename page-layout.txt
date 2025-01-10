@@ -10,17 +10,17 @@
   (H3) DSBRAND Co., Ltd. (株式会社DSBRAND)
   (H4) Nagasaki, Japan - April 2019 to Present
   (P) Head of English contents provision in the "Global Center" department. Main responsibilities include English translation of Japanese web contents, site management through the use of CSS and JavaScript, development of tools and systems for internal use, and research into foreign markets regarding business opportunities. Other experience includes interpretation regarding and management of contact with overseas companies, as well as project management experience since February 2024.
--Programming Examples
+-Programming Examples ☑
   (DIV) Era Converter (Typescript)
   (DIV) Photo Viewer (Node.js)
   (DIV) Web Scraper (Python)
--Main Technologies
+-Main Technologies ☑
   (DIV) HTML
   (DIV) CSS, Sass
-  (DIV) JavaScript, Node.js, Express.js/Pug, TypeScript, Deno, Fresh.js
+  (DIV) JavaScript, Node.js, Express.js/Pug, TypeScript, Deno, Preact/Fresh.js
   (DIV) Python, BeautifulSoup
   (DIV) Linux (CENTOS)
--Secondary Technologies
+-Secondary Technologies　☑
   (DIV) PHP, Cake.php
   (DIV) SQL, MySQL
   (DIV) C#, .NET
