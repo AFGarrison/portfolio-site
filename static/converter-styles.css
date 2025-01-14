@@ -1,34 +1,54 @@
 body {
-  background-color: white;
+  background-color: rgb(231, 198, 120);
   margin: 0 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#contents-section {
+  background-color: rgb(255, 255, 255);
+  border: 5px solid rgb(233, 220, 233);
+  border-radius: 5px;
+  padding: 20px;
 }
 
 #info-box {
   position: absolute;
   top: 50px;
-  left: 80%;
+  left: 78%;
   width: 300px;
   z-index: 5;
 }
 
 #info-button {
-  border: 1px solid black;
-  height: 15px;
-  width: 10%;
+  height: 22px;
+  width: 22px;
+  left: 95%;
   position: relative;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 #more-info {
   transition-property: height;
   transition-duration: 1s;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   visibility: hidden;
   height: 0px;
   max-height: 300px;
   width: 100%;
   position: relative;
-  background-color: lightgray;
+  background-color: rgb(251, 225, 165);;
+  border: 1px solid black;
   padding: 0 5px;
+}
+
+#search-input {
+  width: 20%;
+  margin: 0 auto;
 }
 
 .center-text {

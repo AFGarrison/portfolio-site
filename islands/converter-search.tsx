@@ -17,9 +17,12 @@ export default function ConverterSearch() {
 
     return (
         <div id="converter-search">
-            <input type="text" id="search-bar" ref={textInput}></input>
-            <button id="search-button" onClick={() => searchInput()}>Search</button>
-            <p id="output-section">{text.value.map(e => <p>{e}</p>)}</p>
+            <div id="search-input">
+                <input type="text" id="search-bar" ref={textInput}></input>
+                <button id="search-button" onClick={() => searchInput()}>Search</button>
+            </div>
+            <hr />
+            <div id="output-section">{text.value.map(e => <p>{e}</p>)}</div>
         </div>
     )
 }

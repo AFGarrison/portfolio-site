@@ -3,26 +3,36 @@ import { createRef } from "https://esm.sh/v128/preact@10.22.0/src/index.js";
 //TODO: remove horizontal scroll bar, change position of parent div
 
 export default function InfoBox() {
-    const target = createRef();
-    let displayed = false;
+  const target = createRef();
+  let displayed = false;
 
-    function wrapAndUnwrap() {
-        if (!displayed) {
-            displayed = true;
-            target.current.style.visibility = "visible";
-            target.current.style.height = "300px";
-        } else {
-            displayed = false;
-            target.current.style.height = "1px";
-            target.current.style.visibility = "hidden";
-        }
-        console.log(target.current);
+  function unwrap() {
+    if (displayed === false) {
+      displayed = true;
+      target.current.style.visibility = "visible";
+      target.current.style.height = "300px";
+    } else {
+      return;
     }
+  }
+
+  function wrap() {
+    if (displayed === true) {
+      displayed = false;
+      target.current.style.height = "1px";
+      target.current.style.visibility = "hidden";
+    } else {
+      return;
+    }
+  }
 
   return (
     <div id="info-box">
-      <div id="info-button" onClick={() => wrapAndUnwrap()}>?</div>
-      <div id="more-info" ref={target}>
+      <div id="info-button" onClick={unwrap}>
+        <b>?</b>
+      </div>
+      <br />
+      <div id="more-info" ref={target} onMouseLeave={wrap}>
         <h4>What is this?</h4>
         <p>
           This is a search program for converting years between the western
@@ -55,7 +65,7 @@ export default function InfoBox() {
           segment its time frames. These eras are written with the name of the
           era followed by the number of the year within that era. For example,
           1956 is equivalent to Showa 31, or the 31st year in the Showa
-          era.<br />In the past, eras, called "Nengo (年号) in Japanese, were
+          era.<br />In the past, eras, called "Nengo (年号)" in Japanese, were
           designated for the beginning of the reign of a new emperor, but also
           for any of several reasons such as celebrations or natural disasters.
           This meant that several eras could occur within a single reign. After
@@ -77,20 +87,33 @@ export default function InfoBox() {
               input at all.
             </li>
             <li>
-              The input year is before 658 or after{" "}
+              The input year is before 645 or after{" "}
               {new Date().getFullYear()}; this program only covers years that
               are officially part of a Japanese era, so any years before the
               creation of the system (or that haven't happened yet) aren't
               included.
             </li>
             <li>
-                Some years in the 600s and early 700 hundreds don't have eras despite being between eras in the system. These years cannot be converted, and so are left out for simplicity.
+              Some years in the 600s and early 700 hundreds don't have eras
+              despite being between eras in the system. These years cannot be
+              converted, and so are left out for simplicity.
             </li>
-            <li>This program only accepts half-width numbers. If you don't know what that means, this probably isn't why your search didn't return anything.</li>
+            <li>
+              This program only accepts half-width numbers. If you don't know
+              what that means, this probably isn't why your search didn't return
+              anything.
+            </li>
           </ul>
         </p>
         <h4>My search returned multiple results, what does that mean?</h4>
-        <p>Because Nengo eras could be decided at any time throughout history, some western years are covered by multiple eras. These different eras are listed out when this happens. Either, the year you input was a transition year for the eras in question, or there were multiple eras during that time for some historical reason. (Look up the Northern and Southern Courts for a good example.)</p>
+        <p>
+          Because Nengo eras could be decided at any time throughout history,
+          some western years are covered by multiple eras. These different eras
+          are listed out when this happens. Either, the year you input was a
+          transition year for the eras in question, or there were multiple eras
+          during that time for some historical reason. (Look up the Northern and
+          Southern Courts for a good example.)
+        </p>
       </div>
     </div>
   );
