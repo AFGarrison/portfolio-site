@@ -1,7 +1,8 @@
 export default function TechnologyExperience() {
     return (
         <div id="technology-list-frame">
-            <div className="list-column">
+            <h3>Technology Experience</h3>
+            <div className="list-column half-size">
                 <h4>Main Technologies</h4>
                 <ul>
                     <li>HTML</li>
@@ -28,7 +29,7 @@ export default function TechnologyExperience() {
                     <li>Linux (CENTOS)</li>
                 </ul>
             </div>
-            <div className="list-column">
+            <div className="list-column half-size">
                 <h4>Secondary Technologies</h4>
                 <ul>
                     <li>

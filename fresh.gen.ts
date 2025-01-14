@@ -9,6 +9,7 @@ import * as $blog_home from "./routes/blog/home.tsx";
 import * as $blog_posts_post_ from "./routes/blog/posts/[post].tsx";
 import * as $era_converter from "./routes/era-converter.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $contact_me from "./islands/contact-me.tsx";
 import * as $converter_search from "./islands/converter-search.tsx";
 import * as $info_box from "./islands/info-box.tsx";
 import * as $programming_examples from "./islands/programming-examples.tsx";
@@ -25,6 +26,7 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/contact-me.tsx": $contact_me,
     "./islands/converter-search.tsx": $converter_search,
     "./islands/info-box.tsx": $info_box,
     "./islands/programming-examples.tsx": $programming_examples,

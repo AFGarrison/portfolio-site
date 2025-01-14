@@ -5,6 +5,7 @@ export default function WorkSection(props: {info: InfoObject}) {
 
     return (
         <div class="work-section">
+            <h3>Work History</h3>
             <img src={info.picture} alt={info.name} class="section-picture inline-block"/>
             <div class="inline-block">
                 <h3>{info.name}</h3>

@@ -6,14 +6,16 @@ body {
 #info-box {
   position: absolute;
   top: 50px;
-  left: 88%;
+  left: 80%;
   width: 300px;
+  z-index: 5;
 }
 
 #info-button {
   border: 1px solid black;
   height: 15px;
-  width: 100%;
+  width: 10%;
+  position: relative;
 }
 
 #more-info {
@@ -24,6 +26,9 @@ body {
   height: 0px;
   max-height: 300px;
   width: 100%;
+  position: relative;
+  background-color: lightgray;
+  padding: 0 5px;
 }
 
 .center-text {

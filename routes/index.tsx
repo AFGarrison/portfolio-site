@@ -6,6 +6,7 @@ import OtherSkills from "../components/other-skills.tsx";
 import { workHistoryItems } from "../site-contents/work-history-items.tsx";
 import ProgrammingExamples from "../islands/programming-examples.tsx";
 import TechnologyExperience from "../components/technology-experience.tsx";
+import ContactMe from "../islands/contact-me.tsx";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ProgrammingExamples />
       <TechnologyExperience />
       <OtherSkills />
+      <ContactMe />
       <Footer />
     </div>
   );

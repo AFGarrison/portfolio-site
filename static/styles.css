@@ -4,6 +4,16 @@ body {
   background-color: rgb(189, 235, 137);
 }
 
+button {
+  background-color: rgb(80, 219, 237);
+  color: white;
+  height: 50px;
+  width: 175px;
+  border: 1px solid rgb(80, 219, 237);
+  border-radius: 5px;
+  display: inline-block;
+}
+
 /*IDs*/
 #my-picture {
   margin-left: auto;
@@ -15,6 +25,10 @@ body {
   text-align: center;
 }
 
+.half-size {
+  width: 49%;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -22,8 +36,6 @@ body {
 .list-column {
   display: inline-block;
   height: 100%;
-  width: 49%;
-  border: 1px solid lightgray;
   vertical-align: top;
 }
 
@@ -39,4 +51,9 @@ body {
 .tab {
   display: inline-block;
   border: 1px solid black;
+  cursor: pointer;
+}
+
+.third-size {
+  width: 33%;
 }

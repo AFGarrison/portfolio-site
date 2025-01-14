@@ -11,6 +11,7 @@ export default function ProgrammingExamples() {
     
     return (
         <div>
+            <h3>Work Examples</h3>
             <div class="tab" onClick={() => updateContents(0)}>Japanese Year Converter</div>
             <div class="tab" onClick={() => updateContents(1)}>Web Photo Viewer</div>
             <div class="tab" onClick={() => updateContents(2)}>Web Scraper</div>
