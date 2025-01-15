@@ -1,9 +1,11 @@
+/*HTML tags*/
 body {
   background-color: rgb(231, 198, 120);
   margin: 0 25px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*IDs*/
 #contents-section {
   background-color: rgb(255, 255, 255);
   border: 5px solid rgb(233, 220, 233);
@@ -12,9 +14,7 @@ body {
 }
 
 #info-box {
-  position: absolute;
-  top: 50px;
-  left: 78%;
+  margin: 0 0 0 auto;
   width: 300px;
   z-index: 5;
 }
@@ -22,7 +22,7 @@ body {
 #info-button {
   height: 22px;
   width: 22px;
-  left: 95%;
+  left: 90%;
   position: relative;
   cursor: pointer;
   text-align: center;
@@ -39,8 +39,8 @@ body {
   visibility: hidden;
   height: 0px;
   max-height: 300px;
-  width: 100%;
-  position: relative;
+  width: 300px;
+  position: absolute;
   background-color: rgb(251, 225, 165);;
   border: 1px solid black;
   padding: 0 5px;
@@ -51,6 +51,7 @@ body {
   margin: 0 auto;
 }
 
+/*Classes*/
 .center-text {
   text-align: center;
 }
@@ -58,4 +59,8 @@ body {
 .one-more-thing {
   font-size: 10px;
   color: dimgray;
+}
+
+.result-text {
+  font-size: 150%;
 }

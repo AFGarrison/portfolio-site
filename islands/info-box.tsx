@@ -1,14 +1,13 @@
 import { createRef } from "https://esm.sh/v128/preact@10.22.0/src/index.js";
-
-//TODO: remove horizontal scroll bar, change position of parent div
+import { useSignal } from "@preact/signals";
 
 export default function InfoBox() {
   const target = createRef();
-  let displayed = false;
+  const displayed = useSignal(false);
 
   function unwrap() {
-    if (displayed === false) {
-      displayed = true;
+    if (displayed.value === false) {
+      displayed.value = true;
       target.current.style.visibility = "visible";
       target.current.style.height = "300px";
     } else {
@@ -17,8 +16,8 @@ export default function InfoBox() {
   }
 
   function wrap() {
-    if (displayed === true) {
-      displayed = false;
+    if (displayed.value === true) {
+      displayed.value = false;
       target.current.style.height = "1px";
       target.current.style.visibility = "hidden";
     } else {
@@ -28,7 +27,7 @@ export default function InfoBox() {
 
   return (
     <div id="info-box">
-      <div id="info-button" onClick={unwrap}>
+      <div id="info-button" onClick={(displayed.value) ? wrap : unwrap}>
         <b>?</b>
       </div>
       <br />
@@ -68,14 +67,15 @@ export default function InfoBox() {
           era.<br />In the past, eras, called "Nengo (年号)" in Japanese, were
           designated for the beginning of the reign of a new emperor, but also
           for any of several reasons such as celebrations or natural disasters.
-          This meant that several eras could occur within a single reign. After
-          the fall of the shogunate in 1868, Japan switched to a system where
-          eras would pertain only to the rule of a single emperor.<br />While
-          Japan uses the western system for its years in many cases, the Nengo
-          era system can still be seen in use. This can make interacting with
-          Japanese contents difficult if only the Nengo era year is provided.
-          This program is designed to allow you to confirm any year that fits
-          within a Japanese era, in either direction.
+          This meant that several eras could and often did occur within a single
+          emperor's reign. After the fall of the shogunate in 1868, Japan
+          switched to a system where an era would cover the full rule of a
+          single emperor.<br />While Japan uses the western system for years in
+          many modern cases, the Nengo era system can still be seen in use
+          today. This can make interacting with Japanese contents difficult if
+          only the Nengo era year is provided. This program is designed to allow
+          you to confirm any year that fits within a Japanese era, in either
+          direction.
         </p>
         <h4>My search didn't return anything!</h4>
         <p>
@@ -87,7 +87,7 @@ export default function InfoBox() {
               input at all.
             </li>
             <li>
-              The input year is before 645 or after{" "}
+              The input year is before 645 or after 
               {new Date().getFullYear()}; this program only covers years that
               are officially part of a Japanese era, so any years before the
               creation of the system (or that haven't happened yet) aren't
