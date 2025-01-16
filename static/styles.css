@@ -2,6 +2,7 @@
 body {
   margin: 0 5%;
   background-color: rgb(189, 235, 137);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -12,6 +13,32 @@ button {
   border: 1px solid rgb(80, 219, 237);
   border-radius: 5px;
   display: inline-block;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.34em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+li {
+  font-size: 24px;
 }
 
 /*IDs*/
@@ -24,12 +51,25 @@ button {
   text-align: center;
 }
 
+.display-area {
+  position: static;
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+
 .half-size {
   width: 49%;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.inline-heading {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .list-column {
@@ -41,6 +81,10 @@ button {
 .one-more-thing {
   font-size: 10px;
   color: dimgray;
+}
+
+.section-dimensions {
+  padding: 50px 0;
 }
 
 .section-picture {

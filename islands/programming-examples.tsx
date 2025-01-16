@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { programmingList } from "../site-contents/programming-example-items.tsx";
-import CodingExample from "../components/coding-example.tsx";
+import ProgrammingExample from "../components/programming-example.tsx";
 
 export default function ProgrammingExamples() {
     const contents = useSignal(programmingList[0]);
@@ -10,12 +10,12 @@ export default function ProgrammingExamples() {
     }
     
     return (
-        <div>
+        <div className="section-dimensions">
             <h3>Work Examples</h3>
-            <div class="tab" onClick={() => updateContents(0)}>Japanese Year Converter</div>
-            <div class="tab" onClick={() => updateContents(1)}>Web Photo Viewer</div>
-            <div class="tab" onClick={() => updateContents(2)}>Web Scraper</div>
-            <CodingExample {...contents.value}/>
+            <div className="tab" onClick={() => updateContents(0)}>Japanese Year Converter</div>
+            <div className="tab" onClick={() => updateContents(1)}>Web Photo Viewer</div>
+            <div className="tab" onClick={() => updateContents(2)}>Web Scraper</div>
+            <ProgrammingExample {...contents.value}/>
         </div>
     )
 }

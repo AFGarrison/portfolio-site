@@ -1,6 +1,6 @@
 export default function TechnologyExperience() {
     return (
-        <div id="technology-list-frame">
+        <div id="technology-list-frame" className="section-dimensions">
             <h3>Technology Experience</h3>
             <div className="list-column half-size">
                 <h4>Main Technologies</h4>

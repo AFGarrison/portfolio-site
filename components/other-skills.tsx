@@ -1,6 +1,6 @@
 export default function OtherSkills() {
     return (
-        <div>
+        <div className="section-dimensions">
             <h3>Other Skills</h3>
             <ul>
                 <li>Technical Writing/Content Creation</li>

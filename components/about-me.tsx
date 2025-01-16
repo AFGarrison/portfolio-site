@@ -1,7 +1,7 @@
 export default function AboutMe(props: {image: string}) {
     const { image } = props;
     return (
-        <div id="about-me" class="center-text">
+        <div id="about-me" className="center-text section-dimensions">
             <div id="my-picture">
                 <img src={image} alt="Andrew Garrison" />
             </div>

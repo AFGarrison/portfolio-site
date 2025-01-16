@@ -4,12 +4,12 @@ export default function WorkSection(props: {info: InfoObject}) {
     const { info } = props;
 
     return (
-        <div class="work-section">
+        <div className="work-section">
             <h3>Work History</h3>
-            <img src={info.picture} alt={info.name} class="section-picture inline-block"/>
-            <div class="inline-block">
-                <h3>{info.name}</h3>
-                <h4>{info.details}</h4>
+            <img src={info.picture} alt={info.name} className="section-picture inline-block"/>
+            <div className="inline-block">
+                <span className="inline-heading">{info.name}</span><br />
+                <span className="inline-heading">{info.details}</span>
                 {info.description.map(e => <p>{e}</p>)}
             </div>
         </div>

@@ -7,7 +7,7 @@ export default function ContactMe() {
     }
 
     return (
-        <div id="contact-me">
+        <div id="contact-me" className="section-dimensions">
             <h3>Contact Me</h3>
             <div className="list-column third-size center-text">
                 <p>My GitHub contains all the code for my programming examples.</p>

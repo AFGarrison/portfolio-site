@@ -18,7 +18,7 @@ const eraConverter: actionBlock = {
     ],
     action: (<div>
         <a href="/era-converter">
-            <button>Click here to see the code in action</button>
+            <button>Try it out</button>
         </a>
     </div>)
 }

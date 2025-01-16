@@ -13,7 +13,7 @@ export default function Home() {
     <div id="main-contents">
       <TitleSection />
       <AboutMe image={""} />
-      <div id="work-history">
+      <div id="work-history" className="section-dimensions">
         {workHistoryItems.map(e => <WorkSection info={e}/>)}
       </div>
       <ProgrammingExamples />
