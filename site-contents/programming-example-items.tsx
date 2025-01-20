@@ -10,7 +10,7 @@ const noAction: JSX.Element = <p>To see the code in action, please contact me fo
 
 const eraConverter: actionBlock = {
     name: "Era Converter",
-    details: "Built in Typescript",
+    details: "Built with Typescript",
     picture: "",
     description: [
         `This program converts between years in the western system and the Japanese "Nengo" era system.`,
@@ -25,7 +25,7 @@ const eraConverter: actionBlock = {
 
 const photoViewer: actionBlock = {
     name: "Web Photo Viewer",
-    details: "Built in Node.js",
+    details: "Built with Node.js",
     picture: "",
     description: [
         `This is a webpage that displays photos in order of date taken.`,
@@ -37,7 +37,7 @@ const photoViewer: actionBlock = {
 
 const webScraper: actionBlock = {
     name: "Example Web Scraper",
-    details: "Built in Python",
+    details: "Built with Python",
     picture: "",
     description: [
         `This is a web scraper designed to pick up information from Wikipedia articles and converted into a text file.`,

@@ -1,16 +1,16 @@
 /*HTML Tags*/
 body {
-  margin: 0 5%;
-  background-color: rgb(189, 235, 137);
+  background-color: #F9E49C;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
 }
 
 button {
-  background-color: rgb(80, 219, 237);
+  background-color: #9CB1F9;
   color: white;
   height: 50px;
   width: 175px;
-  border: 1px solid rgb(80, 219, 237);
+  border: 1px solid #9CB1F9;
   border-radius: 5px;
   display: inline-block;
   cursor: pointer;
@@ -19,10 +19,12 @@ button {
 
 h1 {
   font-size: 4em;
+  line-height: 0.75em;
 }
 
 h2 {
   font-size: 3em;
+  line-height: 0.75em;
 }
 
 h3 {
@@ -42,8 +44,27 @@ li {
 }
 
 /*IDs*/
+#about-me {
+  border-radius: 5px;
+  padding: 10px;
+  color: #000000;
+}
+
+#contact-me {
+  margin-bottom: 50px;
+}
+
+#main-contents {
+  width: 100%;
+  margin: 0;
+}
+
 #my-picture {
   margin: 0 auto;
+}
+
+#title-section {
+  color: #000000;
 }
 
 /*Classes*/
@@ -51,15 +72,28 @@ li {
   text-align: center;
 }
 
+.content-margins {
+  margin: 0 5%;
+}
+
 .display-area {
+  background-color: #FFFFFF;
   position: static;
   width: 100%;
-  border: 1px solid lightgray;
-  padding: 20px;
+  border: 1px solid #FFFFFF;
+  padding: 0 0 20px 0;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .half-size {
   width: 49%;
+}
+
+.horizontal-center {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .inline-block {
@@ -68,7 +102,7 @@ li {
 
 .inline-heading {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
 }
 
@@ -81,10 +115,12 @@ li {
 .one-more-thing {
   font-size: 10px;
   color: dimgray;
+  font-style: italic;
 }
 
 .section-dimensions {
-  padding: 50px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .section-picture {
@@ -93,10 +129,26 @@ li {
 
 .tab {
   display: inline-block;
-  border: 1px solid black;
   cursor: pointer;
+  padding-right: 3%;
+  background: linear-gradient(
+    45deg,
+    #FFFFFF,
+    #FFFFFF 87%,
+    Transparent 13%
+  );
+}
+
+.text-block {
+  height: 100px;
 }
 
 .third-size {
   width: 33%;
+}
+
+.work-section {
+  background-color: #9CB1F9;
+  border: #000000 1px solid;
+  padding: 15px;
 }

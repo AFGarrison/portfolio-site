@@ -14,6 +14,7 @@ export default function Home() {
       <TitleSection />
       <AboutMe image={""} />
       <div id="work-history" className="section-dimensions">
+        <h3>Work History</h3>
         {workHistoryItems.map(e => <WorkSection info={e}/>)}
       </div>
       <ProgrammingExamples />
