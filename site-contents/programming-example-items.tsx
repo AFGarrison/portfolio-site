@@ -29,7 +29,7 @@ const photoViewer: actionBlock = {
     picture: "",
     description: [
         `This is a webpage that displays photos in order of date taken.`,
-        `It uses MongoDB to store the data on the photos, and express.js and the Pug template engine to build the web server and front end.`,
+        `It uses express.js and the Pug template engine to build the web server and front end, and MongoDB to store information on the photos.`,
         `I use it at home to allow for the backup and viewing of family photos.`
     ],
     action: noAction

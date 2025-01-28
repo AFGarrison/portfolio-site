@@ -4,7 +4,7 @@ export default function WorkSection(props: {info: InfoObject}) {
     const { info } = props;
 
     return (
-        <div className="work-section">
+        <div className="work-section text-dimensions">
             <div className="inline-block">
                 <img src={info.picture} alt={info.name} className="section-picture"/>
             </div>

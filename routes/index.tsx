@@ -1,6 +1,5 @@
 import AboutMe from "../components/about-me.tsx";
 import TitleSection from "../components/title-section.tsx";
-import Footer from "../components/footer.tsx";
 import WorkSection from "../components/work-section.tsx";
 import OtherSkills from "../components/other-skills.tsx";
 import { workHistoryItems } from "../site-contents/work-history-items.tsx";
@@ -14,14 +13,15 @@ export default function Home() {
       <TitleSection />
       <AboutMe image={""} />
       <div id="work-history" className="section-dimensions">
-        <h3>Work History</h3>
-        {workHistoryItems.map(e => <WorkSection info={e}/>)}
+        <div className="text-dimensions">
+          <h3 className="section-title stand-out">Work History</h3>
+        </div>
+        {workHistoryItems.map((e) => <WorkSection info={e} />)}
       </div>
       <ProgrammingExamples />
       <TechnologyExperience />
       <OtherSkills />
       <ContactMe />
-      <Footer />
     </div>
   );
 }
