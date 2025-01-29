@@ -2,10 +2,6 @@
 import { JSX } from "preact/jsx-runtime";
 import { actionBlock } from "../interfaces/interfaces.ts";
 
-/*
-TODO: create other programming example data points
-*/
-
 const noAction: JSX.Element = <p>To see the code in action, please contact me for a demo.</p>;
 
 const eraConverter: actionBlock = {
@@ -36,7 +32,7 @@ const photoViewer: actionBlock = {
 }
 
 const webScraper: actionBlock = {
-    name: "Example Web Scraper",
+    name: "Web Scraper",
     details: "Built with Python",
     picture: "",
     description: [

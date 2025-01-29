@@ -59,6 +59,13 @@ li {
   );
 }
 
+#about-me-frame {
+  background-color: #FFFFFF;
+  border: #1ee196 solid 3px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
 #contact-me {
   padding-bottom: 0px !important;
 }
@@ -170,6 +177,15 @@ li {
   margin-block-start: 0;
 }
 
+.selected {
+  background: linear-gradient(
+    45deg,
+    #F7D26C,
+    #F7D26C 87%,
+    Transparent 13%
+  );
+}
+
 .stand-out {
   color: #FFFFFF;
   text-shadow: #000000 2px 2px 4px;
@@ -179,13 +195,9 @@ li {
   display: inline-block;
   cursor: pointer;
   padding-right: 3%;
-  background: linear-gradient(
-    45deg,
-    #F7D26C,
-    #F7D26C 87%,
-    Transparent 13%
-  );
 }
+
+
 
 .text-block {
   height: 100px;
@@ -200,9 +212,18 @@ li {
   width: 33%;
 }
 
+.unselected {
+  background: linear-gradient(
+    45deg,
+    #bb9b44,
+    #bb9b44 87%,
+    Transparent 13%
+  );
+}
+
 .work-section {
   background-color: #1ee196;
-  border: #1ee196 1px solid;
+  border: #000000 1px solid;
   border-radius: 5px;
   padding: 15px;
 }
