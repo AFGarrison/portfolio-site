@@ -20,13 +20,19 @@ export default function EraConverter() {
         <div id="header" className="center-text">
           <h1>Japanese/Western Year Converter</h1>
         </div>
-        <InfoBox />
-        <div id="contents-section">
-          <p>Input a year in either the Western system (e.g. 2025) or the Japanese era system (e.g. Heisei 4) to see its equivalent in the opposite system. Both English and Japanese inputs are accepted.</p>
-          <ConverterSearch />
+        <div className="contents-margin">
+          <InfoBox />
+          <div id="contents-section">
+            <p>
+              Input a year in either the Western system (e.g. 2025) or the
+              Japanese era system (e.g. Heisei 4) to see its equivalent in the
+              opposite system. Both English and Japanese inputs are accepted.
+            </p>
+            <ConverterSearch />
+          </div>
         </div>
         <Footer />
       </body>
     </html>
-  )
+  );
 }

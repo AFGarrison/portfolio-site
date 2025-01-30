@@ -1,16 +1,28 @@
 /*HTML tags*/
 body {
-  background-color: rgb(231, 198, 120);
-  margin: 0 25px;
+  background-color: #E4DBCA;
+  margin: 0 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 0.75em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 /*IDs*/
 #contents-section {
   background-color: rgb(255, 255, 255);
-  border: 5px solid rgb(233, 220, 233);
+  border: 3px solid #D3C4A8;
   border-radius: 5px;
   padding: 20px;
+}
+
+#header {
+  height: 125px;
+  padding-top: 50px;
 }
 
 #info-box {
@@ -41,7 +53,7 @@ body {
   max-height: 300px;
   width: 300px;
   position: absolute;
-  background-color: rgb(251, 225, 165);;
+  background-color: #D3C4A8;
   border: 1px solid black;
   padding: 0 5px;
 }
@@ -56,9 +68,15 @@ body {
   text-align: center;
 }
 
+.contents-margin {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .one-more-thing {
   font-size: 10px;
   color: dimgray;
+  font-style: italic;
 }
 
 .result-text {

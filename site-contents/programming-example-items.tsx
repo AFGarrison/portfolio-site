@@ -14,7 +14,7 @@ const eraConverter: actionBlock = {
     ],
     action: (<div>
         <a href="/era-converter">
-            <button>Try it out</button>
+            <button type="button">Try it out</button>
         </a>
     </div>)
 }
@@ -25,7 +25,7 @@ const photoViewer: actionBlock = {
     picture: "",
     description: [
         `This is a webpage that displays photos in order of date taken.`,
-        `It uses express.js and the Pug template engine to build the web server and front end, and MongoDB to store information on the photos.`,
+        `It uses express.js and the Pug template engine to build the web server and front end.`,
         `I use it at home to allow for the backup and viewing of family photos.`
     ],
     action: noAction

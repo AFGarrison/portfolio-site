@@ -20,7 +20,7 @@ export default function ContactMe() {
             <p>My GitHub contains all the code for my programming examples.</p>
           </div>
           <a href="">
-            <button>GitHub</button>
+            <button type="button">GitHub</button>
           </a>
         </div>
         <div className="list-column third-size center-text">
@@ -31,7 +31,7 @@ export default function ContactMe() {
             </p>
           </div>
           <a href="">
-            <button>My Resume</button>
+            <button type="button">My Resume</button>
           </a>
         </div>
         <div className="list-column third-size center-text">
@@ -39,7 +39,7 @@ export default function ContactMe() {
             <p>I also have a LinkedIn page.</p>
           </div>
           <a href="">
-            <button>LinkedIn</button>
+            <button type="button">LinkedIn</button>
           </a>
         </div>
         <div className="direct-contact center-text">
@@ -47,7 +47,7 @@ export default function ContactMe() {
             If you would like to contact me directly, feel free to use the
             button below.
           </p>
-          <button onClick={fireLink}>Contact Me</button>
+          <button type="button" onClick={fireLink}>Contact Me</button>
         </div>
       </div>
       <Footer />
