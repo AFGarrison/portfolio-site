@@ -19,7 +19,7 @@ export default function ContactMe() {
           <div className="text-block">
             <p>My GitHub contains all the code for my programming examples.</p>
           </div>
-          <a href="">
+          <a href="https://github.com/AFGarrison?tab=repositories">
             <button type="button">GitHub</button>
           </a>
         </div>

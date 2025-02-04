@@ -20,6 +20,7 @@ export default function InfoBox() {
       displayed.value = false;
       target.current.style.height = "1px";
       target.current.style.visibility = "hidden";
+      target.current.scrollTop = "0";
     } else {
       return;
     }
@@ -61,14 +62,14 @@ export default function InfoBox() {
         </h4>
         <p>
           Since the 600s, Japan has used an era system defined by the emperor to
-          segment its time frames. These eras are written with the name of the
+          classify specific timeframes. These eras are written with the name of the
           era followed by the number of the year within that era. For example,
           1956 is equivalent to Showa 31, or the 31st year in the Showa
           era.<br />In the past, eras, called "Nengo (年号)" in Japanese, were
           designated for the beginning of the reign of a new emperor, but also
           for any of several reasons such as celebrations or natural disasters.
           This meant that several eras could and often did occur within a single
-          emperor's reign. After the fall of the shogunate in 1868, Japan
+          emperor's reign. After the fall of the Tokugawa Shogunate in 1868, Japan
           switched to a system where an era would cover the full rule of a
           single emperor.<br />While Japan uses the western system for years in
           many modern cases, the Nengo era system can still be seen in use

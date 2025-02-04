@@ -1,28 +1,37 @@
 /*HTML tags*/
 body {
-  background-color: #E4DBCA;
+  background-color: #e4dbca;
   margin: 0 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   font-size: 4em;
   line-height: 0.75em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
 
 /*IDs*/
 #contents-section {
-  background-color: rgb(255, 255, 255);
-  border: 3px solid #D3C4A8;
+  background-color: #FFFFFF;
+  border: 3px solid #d3c4a8;
   border-radius: 5px;
   padding: 20px;
 }
 
 #header {
-  height: 125px;
+  height: 200px;
   padding-top: 50px;
+  background:
+    linear-gradient(transparent, transparent 70%, #e4dbca),
+    url("/pictures/japan-print.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #info-box {
@@ -40,6 +49,7 @@ h1 {
   text-align: center;
   color: white;
   border: 3px solid white;
+  background-color: #d3c4a8;
   border-radius: 50%;
 }
 
@@ -53,7 +63,7 @@ h1 {
   max-height: 300px;
   width: 300px;
   position: absolute;
-  background-color: #D3C4A8;
+  background-color: #f5efe5;
   border: 1px solid black;
   padding: 0 5px;
 }

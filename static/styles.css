@@ -135,6 +135,10 @@ li {
   margin: 0 auto;
 }
 
+.example-picture {
+  width: 80%;
+}
+
 .half-size {
   width: 48%;
 }

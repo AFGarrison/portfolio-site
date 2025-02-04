@@ -7,7 +7,7 @@ const noAction: JSX.Element = <p>To see the code in action, please contact me fo
 const eraConverter: actionBlock = {
     name: "Era Converter",
     details: "Built with Typescript",
-    picture: "",
+    picture: "/pictures/era-converter.png",
     description: [
         `This program converts between years in the western system and the Japanese "Nengo" era system.`,
         `It covers every year that falls within a Japanese era, and can search in both English and Japanese.`
