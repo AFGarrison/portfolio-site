@@ -18,7 +18,7 @@ export default function EraConverter() {
       </head>
       <body>
         <div id="header" className="center-text">
-          <h1>Japanese/Western Year Converter</h1>
+          <h1>Japanese-Western Year Converter</h1>
         </div>
         <div className="contents-margin">
           <InfoBox />
