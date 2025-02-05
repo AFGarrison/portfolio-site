@@ -69,12 +69,17 @@ h1 {
 }
 
 #search-bar {
-  width: 100%;
+  width: 60%;
+}
+
+#search-button {
+  width: 70px;
 }
 
 #search-input {
-  width: 20%;
+  width: 40%;
   margin: 0 auto;
+  text-align: center;
 }
 
 /*Classes*/
