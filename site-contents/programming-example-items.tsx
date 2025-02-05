@@ -19,22 +19,21 @@ const eraConverter: actionBlock = {
     </div>)
 }
 
-const photoViewer: actionBlock = {
-    name: "Web Photo Viewer",
-    details: "Built with Node.js",
-    picture: "",
+const managementPortal: actionBlock = {
+    name: "Management Portal",
+    details: "Built with Cake.php",
+    picture: "/pictures/management-portal.png",
     description: [
-        `This is a webpage that displays photos in order of date taken.`,
-        `It uses express.js and the Pug template engine to build the web server and front end.`,
-        `I use it at home to allow for the backup and viewing of family photos.`
+        `This is a portal site for recording and managing customer information.`,
+        `It was a group development project by my current department, and is currently in use.`
     ],
-    action: noAction
+    action: (<p style="font-style: italic;">Code cannot be shared due to confidentiality clause in contract.</p>)
 }
 
 const webScraper: actionBlock = {
     name: "Web Scraper",
     details: "Built with Python",
-    picture: "",
+    picture: "/pictures/web-scraper.png",
     description: [
         `This is a web scraper designed to pick up information from Wikipedia articles and converted into a text file.`,
         `The program makes use of the BeautifulSoup library in order to access the designated page(s) and data.`
@@ -42,4 +41,4 @@ const webScraper: actionBlock = {
     action: noAction
 }
 
-export const programmingList = [eraConverter, photoViewer, webScraper];
+export const programmingList = [eraConverter, managementPortal, webScraper];

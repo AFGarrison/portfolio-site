@@ -17,7 +17,7 @@ export default function ContactMe() {
         </div>
         <div className="list-column third-size center-text">
           <div className="text-block">
-            <p>My GitHub contains all the code for my programming examples.</p>
+            <p>My GitHub contains the code for my personal programming examples.</p>
           </div>
           <a href="https://github.com/AFGarrison?tab=repositories">
             <button type="button">GitHub</button>
@@ -30,7 +30,7 @@ export default function ContactMe() {
               education and work history.
             </p>
           </div>
-          <a href="">
+          <a href="https://docs.google.com/document/d/181XxzzSAnZop1EJ9OVQDK5AyJJ4zQwTM/edit?usp=drivesdk&ouid=105670956959440607932&rtpof=true&sd=true">
             <button type="button">My Resume</button>
           </a>
         </div>
@@ -38,7 +38,7 @@ export default function ContactMe() {
           <div className="text-block">
             <p>I also have a LinkedIn page.</p>
           </div>
-          <a href="">
+          <a href="https://www.linkedin.com/in/andrewfgarrison">
             <button type="button">LinkedIn</button>
           </a>
         </div>

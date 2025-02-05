@@ -45,7 +45,6 @@ li {
 /*IDs*/
 #about-me {
   border-radius: 5px;
-  padding: 100px 0;
   color: #000000;
   background: linear-gradient(
     #1e6ae1 2%,
@@ -137,6 +136,7 @@ li {
 
 .example-picture {
   width: 80%;
+  border: #000000 solid 1px;
 }
 
 .half-size {

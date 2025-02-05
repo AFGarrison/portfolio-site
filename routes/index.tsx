@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id="main-contents">
       <TitleSection />
-      <AboutMe image={""} />
+      <AboutMe />
       <div id="work-history" className="section-dimensions">
         <div className="text-dimensions">
           <h3 className="section-title stand-out">Work History</h3>
