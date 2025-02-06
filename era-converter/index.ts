@@ -66,7 +66,7 @@ function searchENYear(inputYear: [string, number]): string[] | null {
     for (let period of correctPeriods) {
         let correctEras = period.eras.filter(
             era => (era.name === inputYear[0] || era.JPName === inputYear[0])
-            && era.yearRange >= inputYear[1]
+            && era.yearRange + 1 >= inputYear[1]
         );
 
         for (let era of correctEras) {
