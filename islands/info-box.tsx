@@ -89,7 +89,7 @@ export default function InfoBox() {
             </li>
             <li>
               The input year is before 645 or after 
-              {new Date().getFullYear()}; this program only covers years that
+              {" " + new Date().getFullYear()}; this program only covers years that
               are officially part of a Japanese era, so any years before the
               creation of the system (or that haven't happened yet) aren't
               included.
