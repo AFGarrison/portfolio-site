@@ -1,5 +1,3 @@
-import Footer from "../components/footer.tsx";
-
 export default function ContactMe() {
   const account = "andrewfgarrison";
   const domain = "gmail";
@@ -50,7 +48,6 @@ export default function ContactMe() {
           <button type="button" onClick={fireLink}>Contact Me</button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
