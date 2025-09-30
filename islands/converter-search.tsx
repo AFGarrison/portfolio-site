@@ -19,11 +19,11 @@ export default function ConverterSearch() {
         <div id="converter-search">
             <div id="search-input">
                 <input type="text" id="search-bar" ref={inputArea}></input>
-                <button id="search-button" onClick={searchInput}>Search</button>
+                <button type="button" id="search-button" onClick={searchInput}>Search</button>
             </div>
             <hr />
             <div id="output-section" className="center-text">
-                {output.value.map((e: string) => <p className="result-text"><b>{e}</b></p>)}
+                {output.value.map((e: string) => <p key className="result-text"><b>{e}</b></p>)}
             </div>
         </div>
     )
