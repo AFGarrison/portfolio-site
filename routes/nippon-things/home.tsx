@@ -3,7 +3,8 @@ import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { getPosts } from "../../utils/posts.ts";
 import { Post } from "../../interfaces/interfaces.ts";
-
+import { CSS, render } from "@deno/gfm";
+import { Head } from "$fresh/runtime.ts";
 
 function PostCard(props: { post: Post }) {
   const { post } = props;
