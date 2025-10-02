@@ -23,7 +23,7 @@ export default function ConverterSearch() {
             </div>
             <hr />
             <div id="output-section" className="center-text">
-                {output.value.map((e: string) => <p key className="result-text"><b>{e}</b></p>)}
+                {output.value.map((e: string, index: number) => <p key={index} className="result-text"><b>{e}</b></p>)}
             </div>
         </div>
     )
