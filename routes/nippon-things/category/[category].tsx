@@ -1,14 +1,14 @@
-import Header from "../../components/header.tsx";
+import Header from "../../../components/header.tsx";
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
-import { getPosts } from "../../utils/post-functions.ts";
-import { Post } from "../../interfaces/interfaces.ts";
+import { getCategory } from "../../../utils/post-functions.ts";
+import { Post } from "../../../interfaces/interfaces.ts";
 
 function PostCard(props: { post: Post }) {
   const { post } = props;
   return (
     <div>
-      <a href={`./posts/${post.slug}`}>
+      <a href={`../posts/${post.slug}`}>
         <h3>
           {post.title}
         </h3>
@@ -21,7 +21,7 @@ function PostCard(props: { post: Post }) {
         </time>
         <div>
           {post.snippet}
-          <a href={`./category/${post.category}`}><div className="gray-out">{post.category}</div></a>
+          <a href={`../category/${post.category}`}><div className="gray-out">{post.category}</div></a>
         </div>
       </a>
     </div>
@@ -30,20 +30,17 @@ function PostCard(props: { post: Post }) {
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
-    const posts = await getPosts();
+    const posts = await getCategory(ctx.params.category);
     return ctx.render(posts);
   },
 };
 
-export default function Home(props: PageProps<Post[]>) {
+export default function CategoryList(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
     <div>
       <Header logo="" links={[{ link: "", text: "" }]} />
-      <div id="latest-post"></div>
-      <div id="recent-posts">
-        {posts.map((post, index) => <PostCard post={post} key={index} />)}
-      </div>
+      {posts.map((post, index) => <PostCard post={post} key={index} />)}
     </div>
   );
 }

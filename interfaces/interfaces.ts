@@ -17,4 +17,5 @@ export interface Post {
   publishedAt: Date;
   content: string;
   snippet: string;
+  category: string;
 }

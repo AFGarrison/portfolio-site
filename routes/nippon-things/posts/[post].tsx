@@ -1,9 +1,9 @@
+// deno-lint-ignore-file
 import Header from "../../../components/header.tsx";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPost } from "../../../utils/posts.ts";
+import { getPost } from "../../../utils/post-functions.ts";
 import { Post } from "../../../interfaces/interfaces.ts";
-import { CSS, render } from "@deno/gfm";
-import { Head } from "$fresh/runtime.ts";
+import { render } from "@deno/gfm";
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
@@ -17,9 +17,6 @@ export default function PostPage(props: PageProps<Post>) {
   const post = props.data;
   return (
     <main>
-      <Head>
-        <style dangerouslySetInnerHTML={{ __html: CSS }} />
-      </Head>
       <Header logo="" links={[{ link: "", text: "" }]} />
       <h1>{post.title}</h1>
       <time>
@@ -31,6 +28,7 @@ export default function PostPage(props: PageProps<Post>) {
       </time>
       <div dangerouslySetInnerHTML={{ __html: render(post.content) }}
       />
+      <a href={`../category/${post.category}`}><div className="gray-out">{post.category}</div></a>
     </main>
   );
 }
