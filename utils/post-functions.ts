@@ -29,7 +29,8 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getCategory(categoryName: string): Promise<Post[]> {
   const files = Deno.readDir("./blog-posts/");
-  const promises = [];
+  // deno-lint-ignore no-explicit-any
+  const promises: any[] = [];
   for await (const file of files) {
     const slug = file.name.replace(".md", "");
     await getPost(slug).then(e => {
