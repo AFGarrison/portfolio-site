@@ -2,8 +2,11 @@ export default function ListBlock(props: {title: string, contents: string[], cal
     return (
         <div className="page-margins">
             <h4 className="section-title orange-color">{props.title}</h4>
-            {props.contents.forEach(e => <p>{e}</p>)}
-            {props.callsToAction.forEach(e => <a href={e.link}><div class="button">{e.text}</div></a>)}
+            <ul>
+                {props.contents.map((e, i) => <li key={i}>{e}</li>)}
+            </ul>
+            
+            {props.callsToAction.map((e, i) => <a key={i} href={e.link}><div class="button">{e.text}</div></a>)}
         </div>
     )
 }
