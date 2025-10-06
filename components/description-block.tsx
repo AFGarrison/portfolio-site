@@ -1,7 +1,7 @@
-export default function DescriptionBlock(input: string) {
+export default function DescriptionBlock(props: {text: string[]}) {
     return (
-        <div>
-            <p>{input}</p>
+        <div className="page-margins">
+            <p>{props.text}</p>
         </div>
     )
 }
