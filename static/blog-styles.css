@@ -1,8 +1,37 @@
+/*HTML Tags*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
 body {
     background-color: white;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+h1, h2, h3, h4, h5, h6 {
+    color: #001514;
+}
+
+/*IDs*/
+#blog-contents {
+    background-color: white;
+    width: 75vw;
+    margin-left: 25%;
+}
+
+#blog-header {
+    background-color: #BC4611;
+    color: white;
+    height: 100vh;
+    width: 125px;
+    position: absolute;
+    box-shadow: 5px 0px 10px #001514;
+}
+
+/*Classes*/
+.center-text {
+    text-align: center;
+}
+.column-stack {
+    display: inline-block;
 }

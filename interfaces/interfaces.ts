@@ -18,4 +18,6 @@ export interface Post {
   content: string;
   snippet: string;
   category: string;
+  image: string;
+  author: string;
 }

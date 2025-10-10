@@ -1,4 +1,4 @@
-import Header from "../../../components/header.tsx";
+import BlogHeader from "../../../components/blog-header.tsx";
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { getCategory } from "../../../utils/post-functions.ts";
@@ -39,8 +39,10 @@ export default function CategoryList(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
     <div>
-      <Header logo="" links={[{ link: "", text: "" }]} />
+      <BlogHeader />
+      <div id="blog-contents" className="column-stack">
       {posts.map((post, index) => <PostCard post={post} key={index} />)}
+    </div>
     </div>
   );
 }

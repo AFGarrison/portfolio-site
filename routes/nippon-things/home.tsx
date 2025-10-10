@@ -1,8 +1,8 @@
-import Header from "../../components/header.tsx";
 import { Handlers } from "$fresh/server.ts";
 import { PageProps } from "$fresh/server.ts";
 import { getPosts } from "../../utils/post-functions.ts";
 import { Post } from "../../interfaces/interfaces.ts";
+import BlogHeader from "../../components/blog-header.tsx";
 
 function PostCard(props: { post: Post }) {
   const { post } = props;
@@ -21,7 +21,10 @@ function PostCard(props: { post: Post }) {
         </time>
         <div>
           {post.snippet}
-          <a href={`./category/${post.category}`}><div className="gray-out">{post.category}</div></a>
+          <div>{post.author}</div>
+          <a href={`./category/${post.category}`}>
+            <div className="gray-out">{post.category}</div>
+          </a>
         </div>
       </a>
     </div>
@@ -38,12 +41,14 @@ export const handler: Handlers<Post[]> = {
 export default function Home(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
-    <div>
-      <Header logo="" links={[{ link: "", text: "" }]} />
-      <div id="latest-post"></div>
-      <div id="recent-posts">
-        {posts.map((post, index) => <PostCard post={post} key={index} />)}
+    <main>
+      <BlogHeader />
+      <div id="blog-contents" className="column-stack">
+        <div id="latest-post"></div>
+        <div id="recent-posts">
+          {posts.map((post, index) => <PostCard post={post} key={index} />)}
+        </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -11,7 +11,9 @@ export async function getPost(slug: string): Promise<Post | null> {
     publishedAt: new Date((attrs as Post).publishedAt),
     content: body,
     snippet: (attrs as Post).snippet,
-    category: (attrs as Post).category
+    category: (attrs as Post).category,
+    image: (attrs as Post).image,
+    author: (attrs as Post).author
   };
 }
 
