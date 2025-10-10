@@ -20,13 +20,17 @@ export default function PostPage(props: PageProps<Post>) {
       <BlogHeader />
       <div id="blog-contents" className="column-stack">
         <h1>{post.title}</h1>
-        <time>
+        <image src={`./images/${post.image}`} alt={post.image}/>
+        <div>
+          <time>
           {new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
             month: "long",
             day: "numeric",
           })}
         </time>
+        </div>
+        <div>{post.author}</div>
         <div dangerouslySetInnerHTML={{ __html: render(post.content) }} />
         <a href={`../category/${post.category}`}>
           <div className="gray-out">{post.category}</div>

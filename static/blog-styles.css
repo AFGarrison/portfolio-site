@@ -8,7 +8,7 @@ body {
     background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h3, h4, h5, h6 {
     color: #001514;
 }
 
@@ -32,6 +32,41 @@ h1, h2, h3, h4, h5, h6 {
 .center-text {
     text-align: center;
 }
+
 .column-stack {
     display: inline-block;
+}
+
+.gray-out {
+    height: 17.5px;
+    width: 60px;
+    font-size: smaller;
+    color: gray;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.header-link {
+    color: bisque;
+    font-weight: bold;
+}
+
+.header-link:hover {
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #001514;
+}
+
+.post-block {
+    width: 500px;
+}
+
+/*Media Queries*/
+@media screen  and (max-width: 700px)  {
+    div.post-block {
+        width: 80%;
+    }
 }

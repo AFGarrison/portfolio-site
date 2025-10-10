@@ -1,9 +1,17 @@
 export default function BlogHeader() {
   return (
     <div id="blog-header" className="column-stack center-text">
-      <a href="/nippon-things/home/">
+      <a href="/nippon-things/home/" className="header-link">
         <img title="blog-logo" src="" alt="Nippon Things Logo" />
-        <h5>Nippon Things</h5>
+        <div>Nippon Things</div>
+        <br />
+        <div className="center-text">
+          <a href="/nippon-things/about-me" className="header-link">About Me</a>
+        </div>
+        <br />
+        <div className="center-text">
+          <a className="header-link" href="/nippon-things/categories">Categories</a>
+        </div>
       </a>
     </div>
   );

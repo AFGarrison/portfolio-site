@@ -61,11 +61,17 @@ li {
 }
 
 /*Classes*/
-.page-margins {
-  width: 80%;
-  margin: 0 auto;
+.one-more-thing {
+  font-size: 10px;
+  color: dimgray;
+  font-style: italic;
 }
 
 .orange-color {
   color: #fc9a1a;
+}
+
+.page-margins {
+  width: 80%;
+  margin: 0 auto;
 }

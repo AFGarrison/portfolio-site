@@ -7,6 +7,8 @@ import * as $_app from "./routes/_app.tsx";
 import * as $era_converter from "./routes/era-converter.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $nippon_things_layout from "./routes/nippon-things/_layout.tsx";
+import * as $nippon_things_about_me from "./routes/nippon-things/about-me.tsx";
+import * as $nippon_things_categories from "./routes/nippon-things/categories.tsx";
 import * as $nippon_things_category_category_ from "./routes/nippon-things/category/[category].tsx";
 import * as $nippon_things_home from "./routes/nippon-things/home.tsx";
 import * as $nippon_things_posts_post_ from "./routes/nippon-things/posts/[post].tsx";
@@ -22,6 +24,8 @@ const manifest = {
     "./routes/era-converter.tsx": $era_converter,
     "./routes/index.tsx": $index,
     "./routes/nippon-things/_layout.tsx": $nippon_things_layout,
+    "./routes/nippon-things/about-me.tsx": $nippon_things_about_me,
+    "./routes/nippon-things/categories.tsx": $nippon_things_categories,
     "./routes/nippon-things/category/[category].tsx":
       $nippon_things_category_category_,
     "./routes/nippon-things/home.tsx": $nippon_things_home,

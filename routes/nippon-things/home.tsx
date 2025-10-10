@@ -3,33 +3,7 @@ import { PageProps } from "$fresh/server.ts";
 import { getPosts } from "../../utils/post-functions.ts";
 import { Post } from "../../interfaces/interfaces.ts";
 import BlogHeader from "../../components/blog-header.tsx";
-
-function PostCard(props: { post: Post }) {
-  const { post } = props;
-  return (
-    <div>
-      <a href={`./posts/${post.slug}`}>
-        <h3>
-          {post.title}
-        </h3>
-        <time>
-          {new Date(post.publishedAt).toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </time>
-        <div>
-          {post.snippet}
-          <div>{post.author}</div>
-          <a href={`./category/${post.category}`}>
-            <div className="gray-out">{post.category}</div>
-          </a>
-        </div>
-      </a>
-    </div>
-  );
-}
+import PostCard from "../../components/postcard.tsx";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
@@ -44,9 +18,27 @@ export default function Home(props: PageProps<Post[]>) {
     <main>
       <BlogHeader />
       <div id="blog-contents" className="column-stack">
-        <div id="latest-post"></div>
+        <h2>Latest Post</h2>
+        <div id="latest-post">
+          <PostCard post={posts[0]} />
+        </div>
+        <h2>Recent Posts</h2>
         <div id="recent-posts">
-          {posts.map((post, index) => <PostCard post={post} key={index} />)}
+          {posts.slice(1, 11).map((post, index) => (
+            <a href={`/nippon-things/posts/${post.slug}`} key={index}>
+              <div className="post-block recents-link">
+                <span className="recents-title">{post.title}</span>
+                <span className="recents-date">
+                  {new Date(post.publishedAt).toLocaleDateString("en-us", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </span>
+                <hr />
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </main>
