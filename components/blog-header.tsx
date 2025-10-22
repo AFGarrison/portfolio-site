@@ -6,7 +6,7 @@ export default function BlogHeader() {
         <div>Nippon Things</div>
         <br />
         <div className="center-text">
-          <a href="/nippon-things/about-me" className="header-link">About Me</a>
+          <a href="/nippon-things/about-the-blog" className="header-link">About the Blog</a>
         </div>
         <br />
         <div className="center-text">

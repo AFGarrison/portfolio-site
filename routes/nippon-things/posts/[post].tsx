@@ -20,7 +20,7 @@ export default function PostPage(props: PageProps<Post>) {
       <BlogHeader />
       <div id="blog-contents" className="column-stack">
         <h1>{post.title}</h1>
-        <image src={`./images/${post.image}`} alt={post.image}/>
+        <image className="image-full" src={`/pictures/blog-images/${post.image}`} alt={post.image}/>
         <div>
           <time>
           {new Date(post.publishedAt).toLocaleDateString("en-us", {

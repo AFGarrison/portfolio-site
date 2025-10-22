@@ -5,10 +5,10 @@ export default function PostCard(props: { post: Post }) {
   return (
     <div className="post-block">
       <a href={`/nippon-things/posts/${post.slug}`}>
-        <div className="column-stack">
-          <image src={`./images/${post.image}`} alt={post.image} />
+        <div className="column-stack image-frame">
+          <img className="image-preview" src={`/pictures/blog-images/${post.image}`} alt={post.image} />
         </div>
-        <div className="column-stack">
+        <div className="column-stack contents-frame">
           <h3>
             {post.title}
           </h3>
